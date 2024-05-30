@@ -1,0 +1,16 @@
+export default options = [
+    '-re',
+    '-i', '-',
+    '-c:v', 'libx264',
+    '-preset', 'ultrafast',
+    '-tune', 'zerolatency',
+    '-g', '50',
+    '-keyint_min', '25',
+    '-crf', '25',
+    '-pix_fmt', 'yuv420p',
+    '-sc_threshold', '0',
+    '-profile:v', 'main',
+    '-level', '3.1',
+    '-c:a', 'aac',
+    '-f', 'flv',
+];
