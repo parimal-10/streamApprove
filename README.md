@@ -11,7 +11,7 @@ Stream Approve is a cutting-edge streaming platform designed to facilitate seaml
 ## 📷 Photos
 <table>
   <tr>
-    <td><img maxW="100%" src="https://i.postimg.cc/7h96D4QX/1.png"  /></td>
+    <td><img maxW="100%" minW="100%" src="https://i.postimg.cc/7h96D4QX/1.png"  /></td>
   </tr>
   <tr>
    <td><img src="https://i.postimg.cc/Yq20R4hP/3.png"  /></td>
