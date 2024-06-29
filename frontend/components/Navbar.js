@@ -12,11 +12,11 @@ const Navbar = () => {
                     src='icons/logo.svg'
                     width={32}
                     height={32}
-                    alt='Yoom Logo'
+                    alt='Stream Approve Logo'
                     className='max-sm:size-10'
                 />
                 <p className='text-[26PX] font-extrabold text-white max-sm:hidden'>
-                    Yoom
+                    Stream Approve
                 </p>
             </Link>
 

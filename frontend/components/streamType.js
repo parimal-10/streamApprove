@@ -3,35 +3,22 @@ import React, { useState } from 'react'
 import HomeCard from './HomeCard'
 import { useRouter } from 'next/navigation'
 import MeetingModal from './MeetingModal'
+import randomID from '@/lib/randomID'
 
 const StreamType = () => {
   const router = useRouter();
   const [streamType, setStreamType] = useState(undefined);
 
-  function randomID(len) {
-    let result = '';
-    if (result) return result;
-    var chars = '12345qwertyuiopasdfgh67890jklmnbvcxzMNBVCZXASDQWERTYHGFUIOLKJP',
-      maxPos = chars.length,
-      i;
-    len = len || 5;
-    for (i = 0; i < len; i++) {
-      result += chars.charAt(Math.floor(Math.random() * maxPos));
-    }
-    return result;
-  }
-
   const createStream = () => {
-    router.push(`/stream/${randomID(5)}`);
+    router.push(`/stream/${randomID(5)}?role=Host`);
   }
 
   const joinStream = (streamID) => {
     const url = window.location.protocol + '//' +
       window.location.host + window.location.pathname + 
-      '/stream' + 
-      '?roomID=' +
+      '/stream/' + 
       streamID +
-      '&role=Audience'
+      '?role=Cohost'
     router.push(`/stream/${streamID}`)
   }
 
